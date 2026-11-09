@@ -115,16 +115,16 @@ code{font-family:inherit;background:#fff;border:1px solid var(--line);border-rad
   <div class="lb">INTRODUCTION</div>
   사람들의 불편을 직접 듣고, 그것을 기술 요건과 제안서로 바꾸는 일을 좋아합니다.
   현재 올포랜드에서 금융정보분석원(FIU) 정보시스템을 맡아, 담당 주무관의 요청을 <b>통합 SR로 직접 제안하고 개발해 운영에 반영</b>했습니다.
-  스타트업 사업운영 직무에서는 B2G 입찰 업무를 익히며 반복 업무를 LLM 판정 시스템으로 바꿨고,
-  Java·Spring 기반 웹 서비스부터 AI 연동까지 직접 구현해 왔습니다.
+  스타트업 사업운영 직무에서는 공고 발굴과 사내 반복 업무를 직접 자동화하고, 입찰 PT·정부지원사업 제안서 작성부터 사업 수행과 인건비 집행까지 경험하며
+  사업이 실제로 굴러가는 흐름을 익혔습니다.
 </div>
 
 <h2><span class="n">1</span>핵심 역량</h2>
 <div class="cap">
   <div class="c"><div class="t">기획 · 제안<span class="e">Plan</span></div><ul>
     <li>현업 요구를 기술 요건으로 정리</li>
-    <li>이슈 통합 SR 제안서 작성·승인</li>
-    <li>보안·데이터·원복 사전 검토</li></ul></div>
+    <li>이슈 통합 SR 제안서 작성·반영</li>
+    <li>입찰 PT · 정부지원사업 제안서 작성</li></ul></div>
   <div class="c"><div class="t">웹 구현<span class="e">Build</span></div><ul>
     <li>전자정부 · Spring · MyBatis · JSP</li>
     <li>Spring Boot · React 서비스 2건</li>
@@ -187,15 +187,15 @@ code{font-family:inherit;background:#fff;border:1px solid var(--line);border-rad
 <div class="co keep">
   <div class="co-h"><span class="co-n">올림플래닛 (Olim Planet)</span><span class="co-d">2026.05 – 2026.07 (3개월)</span></div>
   <div class="co-b">
-    <div class="co-r">사업운영 프로 · B2G 사업 운영, 입찰공고 자동 모니터링 시스템 구축</div>
+    <div class="co-r">사업운영 프로 · B2G 사업 운영, 업무 자동화, 입찰·정부지원사업 제안 및 수행 관리</div>
     <p class="muted">3D 가상공간 플랫폼(XROO, 집뷰)을 개발하고 공공·기업 대상 사업을 운영하는 스타트업</p>
-    <p><span class="chip">Python</span><span class="chip">Claude API</span><span class="chip">나라장터 Open API</span><span class="chip">ThreadPoolExecutor</span><span class="chip">Google Chat Webhook</span></p>
+    <p><span class="chip">Python</span><span class="chip">Claude API</span><span class="chip">나라장터 Open API</span><span class="chip">ThreadPoolExecutor</span><span class="chip">Spring Boot</span><span class="chip">e-나라도움</span></p>
     <table>
       <tr><th style="width:17%">구분</th><th>내용</th></tr>
-      <tr><td class="k">사업 운영</td><td>공공기관 대상 B2G 사업 운영을 맡아 입찰 공고 검토, 자사 솔루션과의 적합성 판단 등 영업 전 단계를 경험</td></tr>
-      <tr><td class="k">설계 · 구축</td><td>13개 키워드로 Open API 조회 → Claude가 공고별 적격 여부를 점수화 → <b>기준 점수 이상만</b> Google Chat 알림. 애매한 관련성 판단은 LLM에, 통과 여부는 점수 규칙에 맡겨 결과를 예측·조정할 수 있게 설계</td></tr>
-      <tr><td class="k">성능 개선</td><td>실행 시간 대부분이 외부 API·LLM 응답 대기(I/O-bound)이고 공고별 판정이 서로 독립적임을 확인 → ThreadPoolExecutor로 병렬화하되 Rate Limit에 맞춰 동시 실행 수 제한, <b>88초 → 13초</b></td></tr>
-      <tr><td class="k">효과</td><td>담당자가 매일 오전의 절반을 쓰던 공고 확인 업무를 아침 알림 확인으로 대체</td></tr>
+      <tr><td class="k">공고 발굴 자동화</td><td>13개 키워드로 나라장터 Open API 조회 → Claude가 공고별 적격 여부를 점수화 → <b>기준 점수 이상만</b> Google Chat 알림. 관련성 판단은 LLM에, 통과 여부는 점수 규칙에 맡겨 결과를 조정할 수 있게 설계하고, I/O-bound 구간을 Rate Limit 범위 안에서 병렬화해 <b>88초 → 13초</b>. 담당자가 매일 오전에 하던 공고 확인을 알림 확인으로 대체</td></tr>
+      <tr><td class="k">OA 자동화 툴</td><td>입찰·지원사업 서류마다 반복 입력하던 회사 정보를 자동으로 채워 주는 도구를 <b>Spring Boot</b>로 개발해 <b>사내 시스템으로 사용</b></td></tr>
+      <tr><td class="k">입찰 · 제안</td><td>입찰 발표(PT) 자료를 제작하고, 자사 솔루션(3D 가상공간 플랫폼)에 대한 이해를 바탕으로 여러 정부지원사업 제안서 작성</td></tr>
+      <tr><td class="k">사업 수행</td><td>체결된 사업의 수행 미팅을 잡고 참여하며 공공 사업의 진행 절차를 익히고, 참여 인력과 소통해 <b>e-나라도움</b>으로 인건비 집행 처리</td></tr>
     </table>
   </div>
 </div>
@@ -256,7 +256,7 @@ code{font-family:inherit;background:#fff;border:1px solid var(--line);border-rad
 <p style="margin:0 0 4px"><span class="chip w">실무 사용</span><span class="chip">프로젝트 · 학습</span></p>
 <table>
   <tr><th style="width:20%">분야</th><th>기술</th></tr>
-  <tr><td class="k">Backend</td><td><span class="chip w">Java</span><span class="chip w">Spring(전자정부)</span><span class="chip w">JSP</span><span class="chip w">MyBatis</span><span class="chip w">Python</span><span class="chip">Spring Boot</span><span class="chip">Spring Security · JWT</span><span class="chip">FastAPI</span><span class="chip">Flask</span></td></tr>
+  <tr><td class="k">Backend</td><td><span class="chip w">Java</span><span class="chip w">Spring(전자정부)</span><span class="chip w">JSP</span><span class="chip w">MyBatis</span><span class="chip w">Python</span><span class="chip w">Spring Boot</span><span class="chip">Spring Security · JWT</span><span class="chip">FastAPI</span><span class="chip">Flask</span></td></tr>
   <tr><td class="k">Database</td><td><span class="chip w">Tibero</span><span class="chip w">SQL (SQLD)</span><span class="chip">MySQL</span><span class="chip">Oracle</span><span class="chip">DynamoDB</span><span class="chip">Elasticsearch</span></td></tr>
   <tr><td class="k">Frontend</td><td><span class="chip w">JavaScript</span><span class="chip w">jQuery</span><span class="chip">React</span><span class="chip">Zustand</span><span class="chip">HTML · CSS</span></td></tr>
   <tr><td class="k">AI · Data</td><td><span class="chip w">Claude API</span><span class="chip">OpenAI API</span><span class="chip">RAG</span><span class="chip">Sentence-Transformers</span><span class="chip">KLUE-BERT · DPR</span><span class="chip">TensorFlow</span><span class="chip">Pandas · NumPy</span></td></tr>
@@ -302,7 +302,7 @@ code{font-family:inherit;background:#fff;border:1px solid var(--line);border-rad
   <p>저는 사람을 만나 이야기 나누는 것을 좋아하는 밝은 성격입니다. 고객 응대를 하던 시절에도, 고등학교에서 디지털 튜터로 학생들의 기기와 수업을 돕던 시절에도 먼저 다가가 "어디가 불편하세요?"라고 묻는 것이 자연스러웠습니다. 그렇게 들은 이야기에는 늘 고칠 수 있는 무언가가 들어 있었고, 저는 그것을 기술로 풀어내는 일에서 가장 큰 재미를 느낍니다.</p>
 
   <h4><i>2</i>사업을 알고 나니 기술이 다르게 보였습니다</h4>
-  <p>스타트업에서 사업운영 직무로 공공기관 대상 B2G 사업을 맡았을 때, 어떤 공고가 실제 매출로 이어지는지 판단하는 일이 생각보다 많은 시간을 차지한다는 것을 알게 되었습니다. 담당자는 매일 오전의 절반을 나라장터 공고 검색에 쓰고 있었습니다. 저는 이 업무를 "빠짐없이 찾기, 사업 관련성 판단, 꼭 볼 것만 받기"로 나누고, Claude 기반 판정과 메신저 알림으로 이어지는 시스템을 직접 만들어 운영했습니다. 실행 시간이 늘어나자 원인을 찾아 88초를 13초로 줄였습니다. 이 경험으로 기술은 사업의 흐름을 이해할 때 비로소 정확한 곳에 쓰인다는 것을 배웠습니다.</p>
+  <p>스타트업에서 사업운영 직무로 공공기관 대상 B2G 사업을 맡았을 때, 가장 먼저 눈에 들어온 것은 반복 업무였습니다. 담당자는 매일 오전의 절반을 나라장터 공고 검색에 쓰고 있었고, 입찰이나 지원사업 서류를 낼 때마다 같은 회사 정보를 손으로 다시 입력하고 있었습니다. 저는 Claude 기반으로 적격 공고만 골라 알려주는 시스템을 만들어 실행 시간을 88초에서 13초로 줄였고, 회사 정보를 자동으로 채워 주는 OA 툴을 Spring Boot로 개발해 사내 시스템으로 쓰도록 했습니다. 그렇게 확보한 시간으로 입찰 PT 자료를 만들고, 자사 솔루션을 공부해 여러 정부지원사업 제안서를 작성했습니다. 체결된 사업의 수행 미팅에도 직접 참여하며 공공 사업이 어떤 절차로 진행되는지 배웠고, 참여 인력들과 소통해 e-나라도움으로 인건비를 집행하는 일까지 맡았습니다. 공고를 찾는 일부터 돈이 집행되는 순간까지 사업의 전 과정을 보고 나니, 기술이 어디에 쓰여야 실제로 도움이 되는지가 훨씬 선명해졌습니다.</p>
 
   <h4><i>3</i>접수된 증상 너머의 진짜 원인을 찾아 제안하다</h4>
   <p>금융정보분석원(FIU) 정보시스템을 맡으며, 담당 주무관께서 대민 홈페이지에 게시되는 기관 연혁을 한 건씩 직접 입력하고 계신다는 것을 알게 되었습니다. 원인으로 남아 있던 '엑셀 업로드 오류'는 서비스 로직 오류로 접수되어 있었지만 개발 환경에서는 재현되지 않았습니다. 업로드된 파일의 머리 부분을 확인해 보니 정상 엑셀 서명이 아닌 문서보안(DRM) 암호화 형식이었고, 코드가 아니라 서버가 파일을 열지 못하는 환경 문제였습니다. 분석 과정에서 기존 로직이 연혁 전체를 지운 뒤 다시 등록하는 구조라, 일부 연도만 올려도 나머지가 사라질 수 있다는 위험도 발견했습니다. 저는 보안 정책을 우회하지 않는 붙여넣기·미리보기 방식과 연도 단위 트랜잭션 저장, 시험 중 발견한 XSS 조치를 하나의 SR로 묶어 제안서를 작성했고, 기존 URL과 호출 구조를 유지하고 원복 계획까지 담아 운영에 반영했습니다. 이 경험으로 접수된 증상이 아니라 실제 원인을 찾을 때 가장 안전한 해결책이 나온다는 것을 배웠습니다.</p>
