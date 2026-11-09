@@ -12,11 +12,11 @@
 @font-face{font-family:"NotoKR";font-weight:700;src:url(fonts/noto-sans-kr-korean-700-normal.woff2) format("woff2")}
 
 :root{
-  --g:#4E7A64;      /* point: muted green */
-  --g2:#3F6553;     /* darker */
-  --gt:#EEF4F0;     /* tint bg */
-  --gl:#CFDED4;     /* tint line */
-  --ink:#22272B; --sub:#5B6560; --line:#DDE3DF; --box:#F7F9F8;
+  --g:#2B2B2B;      /* point: near black */
+  --g2:#1F1F1F;     /* darker */
+  --gt:#F2F2F2;     /* light gray bg */
+  --gl:#D4D4D4;     /* gray line */
+  --ink:#1F1F1F; --sub:#6B6B6B; --line:#DCDCDC; --box:#F7F7F7;
 }
 @page{size:A4;margin:15mm 15mm 15mm 15mm}
 *{box-sizing:border-box}
@@ -34,7 +34,7 @@ a{color:var(--g2);text-decoration:none}
 .top .nm b{display:block;font-size:13pt;color:var(--ink)}
 
 h2{font-size:12.5pt;margin:20px 0 8px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px}
-h2 .n{display:inline-flex;width:20px;height:20px;border-radius:5px;background:var(--g);color:#fff;font-size:8.5pt;align-items:center;justify-content:center}
+h2 .n{display:inline-flex;width:20px;height:20px;border-radius:0;background:var(--g);color:#fff;font-size:8.5pt;align-items:center;justify-content:center}
 h3{font-size:10.5pt;margin:12px 0 4px;font-weight:700}
 
 /* tables */
@@ -45,27 +45,27 @@ th{background:var(--gt);font-weight:700;color:var(--g2);border-color:var(--gl)}
 td.k{font-weight:700;white-space:nowrap}
 
 /* clean boxes (no left bars) */
-.box{border:1px solid var(--line);border-radius:8px;background:var(--box);padding:10px 14px;margin:8px 0}
+.box{border:1px solid var(--line);border-radius:0;background:var(--box);padding:10px 14px;margin:8px 0}
 .box.g{background:var(--gt);border-color:var(--gl)}
 .box .lb{font-size:8.3pt;font-weight:700;color:var(--g);letter-spacing:.05em;margin-bottom:2px}
 
 .profile{display:flex;gap:14px;align-items:stretch;margin-top:12px}
-.profile img{width:82px;height:105px;object-fit:cover;border-radius:6px}
+.profile img{width:82px;height:105px;object-fit:cover;border-radius:0}
 .profile table{margin:0}
 .profile td:first-child{width:72px;background:var(--box);font-weight:700}
 
-.chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 7px;margin:1px 2px 1px 0;font-size:8.3pt}
+.chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:0;padding:0 7px;margin:1px 2px 1px 0;font-size:8.3pt}
 .chip.w{background:var(--g);border-color:var(--g);color:#fff}
 
 /* competency grid */
 .cap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
-.cap .c{border:1px solid var(--line);border-radius:8px;padding:9px 11px;background:#fff}
+.cap .c{border:1px solid var(--line);border-radius:0;padding:9px 11px;background:#fff}
 .cap .c .t{font-weight:700;color:var(--g2);font-size:10pt}
 .cap .c .e{font-size:7.8pt;color:var(--sub);font-weight:500;margin-left:3px}
 .cap ul{margin:5px 0 0;padding-left:14px} .cap li{margin:2px 0;font-size:8.8pt}
 
 /* company card */
-.co{border:1px solid var(--line);border-radius:10px;margin:10px 0 14px;overflow:hidden}
+.co{border:1px solid var(--line);border-radius:0;margin:10px 0 14px;overflow:hidden}
 .co-h{page-break-after:avoid;display:flex;justify-content:space-between;align-items:center;background:var(--gt);padding:8px 14px;border-bottom:1px solid var(--gl)}
 .co-n{font-size:11.5pt;font-weight:700}
 .co-d{color:var(--g2);font-weight:500;font-size:9pt}
@@ -73,21 +73,21 @@ td.k{font-weight:700;white-space:nowrap}
 .co-r{font-weight:700}
 .co table{margin:6px 0 8px}
 
-.pj{border:1px solid var(--gl);border-radius:8px;margin:8px 0;overflow:hidden;page-break-inside:avoid}
+.pj{border:1px solid var(--gl);border-radius:0;margin:8px 0;overflow:hidden;page-break-inside:avoid}
 .pj-h{background:var(--g);color:#fff;padding:6px 12px;font-weight:700;display:flex;justify-content:space-between}
 .pj-h span{font-weight:500;font-size:8.5pt;opacity:.9}
 .pj-b{padding:6px 12px 2px}
 
-.tag{display:inline-block;font-size:7.8pt;font-weight:700;color:var(--g2);background:var(--gt);border:1px solid var(--gl);border-radius:9px;padding:0 7px;margin-left:6px;vertical-align:middle}
+.tag{display:inline-block;font-size:7.8pt;font-weight:700;color:var(--g2);background:var(--gt);border:1px solid var(--gl);border-radius:0;padding:0 7px;margin-left:6px;vertical-align:middle}
 tr.hl td{background:var(--gt)}
 
 /* essay */
-.essay-title{border:1px solid var(--gl);background:var(--gt);border-radius:10px;padding:12px 16px;font-size:14pt;font-weight:700;margin:4px 0 12px;color:var(--ink)}
+.essay-title{border:1px solid var(--gl);background:var(--gt);border-radius:0;padding:12px 16px;font-size:14pt;font-weight:700;margin:4px 0 12px;color:var(--ink)}
 .essay-title small{display:block;font-size:8.5pt;font-weight:500;color:var(--g);letter-spacing:.04em;margin-bottom:2px}
 .essay h4{font-size:10.5pt;margin:14px 0 4px;page-break-after:avoid;display:flex;align-items:center;gap:7px}
-.essay h4 i{font-style:normal;display:inline-flex;width:18px;height:18px;border-radius:50%;background:var(--g);color:#fff;font-size:8pt;align-items:center;justify-content:center}
+.essay h4 i{font-style:normal;display:inline-flex;width:18px;height:18px;border-radius:0;background:var(--g);color:#fff;font-size:8pt;align-items:center;justify-content:center}
 .essay p{line-height:1.85;text-align:justify;margin:0}
-code{font-family:inherit;background:#fff;border:1px solid var(--line);border-radius:3px;padding:0 3px;font-size:8.6pt}
+code{font-family:inherit;background:#fff;border:1px solid var(--line);border-radius:0;padding:0 3px;font-size:8.6pt}
 </style>
 </head>
 <body>
